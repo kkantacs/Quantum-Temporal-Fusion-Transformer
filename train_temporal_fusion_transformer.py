@@ -85,3 +85,4 @@ for epoch in range(101):
         print(f"Epoch {epoch} - Loss: {total_loss:.4f}")
         true_vals, pred_vals = run_prediction(model, full_X, full_y, k, T)
         plot_predictions(epoch, true_vals, pred_vals)
+        
