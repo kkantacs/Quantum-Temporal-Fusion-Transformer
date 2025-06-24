@@ -5,8 +5,7 @@ import torch.optim as optim
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from temporal_fusion_transformer import MyModel  # Assumes your model code is saved in mymodel.py
-
+from temporal_fusion_transformer import MyModel  
 # --- Define quantile loss ---
 def quantile_loss(y_pred, y_true, q=0.5):
     error = y_true - y_pred
